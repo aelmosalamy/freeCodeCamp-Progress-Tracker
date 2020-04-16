@@ -37,11 +37,11 @@ class UserProgress():
 		
 		try:
 			if len(self.data) == 2:
-				self.data['points'] = driver.find_element_by_css_selector("p.text-center:nth-child(7)").text
+				self.data['points'] = driver.find_element_by_css_selector("p.text-center:nth-child(8)").text
 			elif len(self.data) == 1:
-				self.data['points'] = driver.find_element_by_css_selector("p.text-center:nth-child(6)").text
+				self.data['points'] = driver.find_element_by_css_selector("p.text-center:nth-child(7)").text
 			else:
-				self.data['points'] = driver.find_element_by_css_selector("p.text-center:nth-child(5)").text
+				self.data['points'] = driver.find_element_by_css_selector("p.text-center:nth-child(6)").text
 		except:
 			print('FETCH_FAILED: points')
 
